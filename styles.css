@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --primary-color: #18191A;
+    --secondary-color: #272A2E;
+    --accent-color-green: #66BD6D;
+    --accent-color-blue: #6CC1FA;
+    --color-white: #FFFFFF;
+    --font-primary: 'Roboto', sans-serif;
+}
+
+html {
+    background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+    font-size: 16px;
+    height: 100%;
+    padding: 1rem 1rem;
+    
+}
+
+
+body {
+    
+    height: 100%;
+
+}
+
+.outter__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+h1,
+h3,
+h5 {
+    font-family: var(--font-primary);
+    color: var(--color-white);
+}
+
+.title__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.title__container i {
+    color: var(--color-white);
+}
+
+.image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.temperature__container span {
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    align-self: baseline;
+    padding-top: 1rem;
+}
+
+.temperature__container h3 {
+    font-size: 5rem;
+}
+
+.temperature__description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlow__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.highlow__container h3, i {
+    font-size: 1rem;
+}
+
+.highlow__container i {
+    color: #ec6e4c;
+}
+
+.day__detail-container {
+    background: var(--secondary-color);
+    margin: 2rem 4rem;
+    border-radius: 2.5rem;
+}
+
+.day__detail-body {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+
+.wind__container,
+.humidity__container,
+.rain__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 4rem;
+}
+
+.day__detail-body i {
+    color: #ec6e4c;
+    font-size: 1.5rem;
+}
+
+.day__detail-body h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.day__detail-body h5 {
+    font-weight: 300;
+}
+
+#seperator {
+    color: #626a74;
+    transform: rotate(90deg);
+}
+
+
+.hours__container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.hours__body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hours__container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.number-container {
+    display: flex;
+    gap: 0.1rem;
+    color: var(--color-white);
+    font-family: var(--font-primary);
+}
+
+.number-container span {
+    align-self: center;
+}
+
+.hour__item {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ background: var(--secondary-color);
+padding: 1rem;
+border: 1px solid #626a74;
+border-radius: 2rem;
+}
+
+
+.hour__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hour__item h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hour__item h5 {
+    color: #A4A4A4;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.hour__item i {
+    color: #ec6e4c;
+}
