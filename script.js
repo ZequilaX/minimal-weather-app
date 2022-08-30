@@ -15,7 +15,8 @@ window.addEventListener('load', () => {
     let labelFive = document.getElementById('label-five');
     let dayCurrent = document.getElementById('day-current');
     let locationIcon = document.querySelector('.image__container');
-    let windSpeed = document.getElementById('wind-speed')
+    let windSpeed = document.getElementById('wind-speed');
+    let windSymbol = document.getElementById('wind-symbol');
     let humidityPercent = document.getElementById('humidity');
     let rainPercent = document.getElementById('rain-percent');
     let rainPercentHourOne = document.getElementById('rain-percent-hour-one');
@@ -131,6 +132,9 @@ window.addEventListener('load', () => {
                         wind_kph
                     } = data.current;
                     const {
+                        wind_mph
+                    } = data.current;
+                    const {
                         humidity
                     } = data.current;
                     const {
@@ -239,6 +243,8 @@ window.addEventListener('load', () => {
                             tempHourThree.textContent = hourThreeTemp;
                             tempHourFour.textContent = hourFourTemp;
                             tempHourFive.textContent = hourFiveTemp;
+                            windSpeed.textContent = wind_kph;
+                            windSymbol.textContent = "kph";
                         } else {
                             temperatureSpan.textContent = "°F";
                             temperatureDegree.textContent = Math.round(Math.floor(farenheit));
@@ -249,6 +255,8 @@ window.addEventListener('load', () => {
                             tempHourThree.textContent = Math.floor(hourThreeFarenheight);
                             tempHourFour.textContent = Math.floor(hourFourFarenheight);
                             tempHourFive.textContent = Math.floor(hourFiveFarenheight);
+                            windSpeed.textContent = wind_mph;
+                            windSymbol.textContent = "mph";
                         }
                     })
 
